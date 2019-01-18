@@ -1,0 +1,105 @@
+$white: #ffffff;
+$black: #000000;
+$yellow: #fcd400;
+$green: #4dabc8;
+$blue: #0b3c49;
+$red: #af0981;
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  background-color: $yellow;
+  padding: 100px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  z-index: 9;
+
+  h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+}
+
+.wrapper {
+  margin-top: 300px;
+}
+
+section {
+  padding: 30px 50px;
+  border-bottom: .5px solid #ccc;
+}
+
+.effect {
+  cursor: pointer;
+  color: $white;
+  opacity: 0.7;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  transition: opacity 0.5s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.halfline span {
+  background-color: $black;
+}
+
+.both-side span {
+  background-color: $green;
+}
+
+.corners-close span {
+  background-color: $blue;
+}
+
+.corners-expand span {
+  background-color: $red;
+}
+
+.double-linethrough span {
+  background-color: $yellow;
+}
+
+.double-underline span {
+  background-color: $green;
+}
+
+.fill span {
+  background-color: $blue;
+}
+
+.fill-corners span {
+  background-color: $red;
+}
+
+.linethrough span {
+  background-color: $yellow;
+}
+
+.moves span {
+  background-color: $green;
+}
+
+.side-line span {
+  background-color: $blue;
+}
+
+.overline span {
+  background-color: $red;
+}
+
+.underline span {
+  background-color: $yellow;
+}
