@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Section from './components/Section';
+import './App.css';
+import './text_hover_effects/text_hover.min.css';
 
 class App extends Component {
   render() {
@@ -9,7 +9,11 @@ class App extends Component {
       <div className="App">
         <main>
           <header className="header">
-            <h1> Hover me </h1>
+            <select>
+              <option> Hover </option>
+              <option> Click </option>
+            </select>
+            <h1 className="text-hover text-hover-halfline-bottom-goes-left" id="heading"> Hover me </h1>
           </header>
           <Section />
         </main>
