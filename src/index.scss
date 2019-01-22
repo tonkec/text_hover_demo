@@ -46,6 +46,14 @@ section {
   }
 }
 
+.select-wrapper {
+  text-align: left;
+  position: fixed;
+  top: 30px;
+  z-index: 99;
+  left: 30px;
+}
+
 .effect {
   cursor: pointer;
   color: $white;

@@ -58,12 +58,16 @@ class Section extends React.Component {
   render() {
       return(
         <div className="wrapper">
-          <form>
-            <select value={this.state.effectTrigger} onChange={(e) => this.handleSelect(e.target.value)}>
+          <div className="select-wrapper">
+            <select
+              value={this.state.effectTrigger}
+              onChange={(e) => this.handleSelect(e.target.value)}
+              className="select"
+              >
               <option value="hover"> Hover </option>
               <option value="click"> Click </option>
             </select>
-          </form>
+          </div>
           {this.state.error && <h2> {this.state.error} </h2>}
           {nameOfTheGroups.map((group, i) =>
             <section key={i} className={group}>
