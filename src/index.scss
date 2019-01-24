@@ -7,6 +7,14 @@ $green: #32B57C;
 $orange: #EFA537;
 $red: #D84E6C;
 $blue: #3BABDB;
+$colors: $black, $yellow, $green, $orange, $red, $blue;
+
+@for $i from 1 through length($colors) {
+    $color: nth($colors, $i);
+    section:nth-child(6n + #{$i}) span {
+      background-color: $color;
+    }
+}
 
 body {
   margin: 0;
@@ -18,7 +26,7 @@ body {
 
 .header {
   background-color: $yellow;
-  padding: 100px 0;
+  padding: 100px 0 150px;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,7 +44,8 @@ body {
 }
 
 .wrapper {
-  margin-top: 280px;
+  margin-top: 350px;
+  margin-bottom: 214px;
 
   @media (min-width: 992px) {
     padding-top: 30px;
@@ -44,12 +53,17 @@ body {
 }
 
 section {
-  padding: 30px 50px;
+  padding: 70px 50px;
   border-bottom: .5px solid #ccc;
+  background-color: #fff;
 
   .section-container {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  h2 {
+    margin: 0 0 20px;
   }
 }
 
@@ -87,54 +101,19 @@ section {
   }
 }
 
-.halfline span {
-  background-color: $green;
+.github-fork {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.both-side span {
-  background-color: $orange;
-}
-
-.corners-close span {
-  background-color: $blue;
-}
-
-.corners-expand span {
-  background-color: $red;
-}
-
-.double-linethrough span {
-  background-color: $green;
-}
-
-.double-underline span {
-  background-color: $orange;
-}
-
-.fill span {
-  background-color: $blue;
-}
-
-.fill-corners span {
-  background-color: $red;
-}
-
-.linethrough span {
-  background-color: $green;
-}
-
-.moves span {
-  background-color: $orange;
-}
-
-.side-line span {
-  background-color: $blue;
-}
-
-.overline span {
-  background-color: $red;
-}
-
-.underline span {
-  background-color: $green;
+.github-cta {
+  padding: 80px 0;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: fixed;
+  z-index: -1;
 }

@@ -47,7 +47,7 @@ class Section extends React.Component {
     // reset state from section component
     const allEffects = document.getElementsByClassName("effect");
     for (var i = 0; i < allEffects.length; i++) {
-      allEffects[i].classList.remove('active')
+      allEffects[i].classList.remove('active');
     }
     document.getElementById(id).classList += " active";
     const heading = document.getElementById("heading");
